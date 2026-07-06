@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Projetos Tinkercad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    background:rgba(15,23,42,.95);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    font-size:20px;
+    color:#dbeafe;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:100px 10%;
+}
+
+.titulo{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.sobre img{
+    width:100%;
+    border-radius:20px;
+}
+
+.sobre p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.card a{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.sobre{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Meu Portfólio</div>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#projetos">Projetos</a>
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<h1>Projetos no <span>Tinkercad</span></h1>
+
+<p>
+Bem-vindo ao meu portfólio. Aqui estão alguns projetos desenvolvidos utilizando o Tinkercad, Arduino e eletrônica.
+</p>
+
+<a href="#projetos" class="btn">
+Ver Projetos
+</a>
+
+</section>
+
+<section id="sobre">
+
+<h2 class="titulo">Sobre Mim</h2>
+
+<div class="sobre">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Tecnologia">
+
+<div>
+
+<p>
+Sou estudante e desenvolvo projetos utilizando Arduino, eletrônica e programação através do Tinkercad. Este site reúne meus principais trabalhos para demonstração e aprendizado.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projetos">
+
+<h2 class="titulo">Meus Projetos</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+
+<div class="card-content">
+
+<h3>Semáforo Inteligente</h3>
+
+<p>Projeto utilizando Arduino.</p>
+
+<a href="COLE_AQUI_SEU_LINK" target="_blank">
+Abrir Projeto
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800">
+
+<div class="card-content">
+
+<h3>Sensor de Temperatura</h3>
+
+<p>Monitoramento usando sensor LM35.</p>
+
+<a href="COLE_AQUI_SEU_LINK" target="_blank">
+Abrir Projeto
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800">
+
+<div class="card-content">
+
+<h3>Sistema de Alarme</h3>
+
+<p>Projeto com buzzer e sensor.</p>
+
+<a href="COLE_AQUI_SEU_LINK" target="_blank">
+Abrir Projeto
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
+
+<div class="card-content">
+
+<h3>Projeto Personalizado</h3>
+
+<p>Adicione aqui outro projeto.</p>
+
+<a href="COLE_AQUI_SEU_LINK" target="_blank">
+Abrir Projeto
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 • Desenvolvido por Seu Nome
+
+</footer>
+
+</body>
+</html>
